@@ -216,7 +216,7 @@
                         for (var i = 0; i < itemCount; i += 3) {
                             var activeClass = i === 0 ? 'active' : '';
                             var slide = `
-                                <div class="carousel-item ${activeClass}">
+                                <div class="container carousel-item ${activeClass}">
                                     <div class="row text-center">
                             `;
 
@@ -232,7 +232,7 @@
                                     //     </div>
                                     // `;
                                     slide +=`
-                                    <div class="col card bg-warning">
+                                    <div class="col-md-4 card bg-warning">
                                         <img src="storage/images/${data[j].product_image}" class="card-img-top" alt="product 1" />
                                         <div class="card-body">
                                         <p class="carousel-caption card-text bs-info">
@@ -242,9 +242,9 @@
                                                 <li>Weight, Him : ${data[j].product_him_weight} gr & Her : ${data[j].product_her_weight} gr</li>
                                                 <li>Stone :${data[j].product_stone}</li>
                                                 <li>Size, Him : ${data[j].product_him_size} ct & Her : ${data[j].product_her_size} ct </li>
-                                                <li>${data[j].product_gold} K</li>
-                                                <li>${data[j].product_color}</li>
-                                                <li>${data[j].product_price}</li>
+                                                <li>Gold : ${data[j].product_gold} K</li>
+                                                <li>Color : ${data[j].product_color}</li>
+                                                <li>Price : Rp. ${data[j].product_price},-</li>
                                             </ul>
                                         </p>
                                         </div>
