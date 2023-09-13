@@ -24,16 +24,17 @@ class ProductRequest extends FormRequest
         return [
             'name'          => 'required|string',
             'image'         => 'required|file',
-            'him_model'     => 'required|in:Silver,Platinum,Paladium',
-            'her_model'     => 'required|in:Silver,Platinum,Paladium',
-            'him_weight'    => 'required|integer',
-            'her_weight'    => 'required|integer',
-            'stone'         => 'required|in:Diamon,Sirkon,Stone',
-            'him_size'      => 'required|integer',
-            'her_size'      => 'required|integer',
-            'price'         => 'required|integer',
-            'gold'          => 'required|in:24,21,18,17,16,9,8,6',
-            'color'         => 'required|in:White,Yellow,Red,Rose',
+            'description'   => 'nullable|string'
+            // 'him_model'     => 'required|in:Silver,Platinum,Paladium',
+            // 'her_model'     => 'required|in:Silver,Platinum,Paladium',
+            // 'him_weight'    => 'required|integer',
+            // 'her_weight'    => 'required|integer',
+            // 'stone'         => 'required|in:Diamon,Sirkon,Stone',
+            // 'him_size'      => 'required|integer',
+            // 'her_size'      => 'required|integer',
+            // 'price'         => 'required|integer',
+            // 'gold'          => 'required|in:24,21,18,17,16,9,8,6',
+            // 'color'         => 'required|in:White,Yellow,Red,Rose',
         ];
     }
 }

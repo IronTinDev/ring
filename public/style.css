@@ -1,10 +1,17 @@
+section {
+    padding-bottom: 6rem;
+}
+.btn-primary {
+    background-color: #34adbd;
+}
 .jumbotron {
     padding-top: 5rem;
     background-color: #ffff;
 }
 
 #product {
-    background-color: #ffd700;
+    /* padding-top: 3rem; */
+    background-color: #5dc8d6;
 }
 
 /* WhatsApp Floating Button CSS */
@@ -27,30 +34,4 @@
 
 .whatsapp-float img:hover {
     transform: scale(1.1); /* Efek perbesar saat hover */
-}
-
-/* Custom CSS untuk mengatur tampilan carousel */
-.carousel-inner .carousel-item .row {
-    display: flex;
-    justify-content: center;
-}
-
-.carousel-inner .carousel-item .col {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    padding: 0 5px;
-}
-
-.carousel-inner .carousel-item .col img {
-    max-width: 100%;
-    height: auto;
-}
-
-.carousel-caption {
-    text-align: center;
-}
-
-ul,
-li {
-    list-style-type: none;
 }

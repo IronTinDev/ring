@@ -15,9 +15,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::view('/fe','visitors.collection');
 Route::get('/', [OnePageController::class,'index'])->name('welcome');
-Route::get('/get-peroduct', [OnePageController::class,'getProducts'])->name('get_products');
+Route::get('/collection', [OnePageController::class,'collection'])->name('collection');
+Route::get('/order', [OnePageController::class,'order'])->name('order');
 Route::post('/email', [OnePageController::class,'email'])->name('email.send');
 
 

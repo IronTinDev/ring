@@ -42,16 +42,7 @@ class ProductController extends Controller
         $product = Product::create([
             'product_name' => $request->name,
             'product_image' => $image,
-            'product_him_model' => $request->him_model,
-            'product_her_model' => $request->her_model,
-            'product_him_weight' => $request->him_weight,
-            'product_her_weight' => $request->her_weight,
-            'product_stone' => $request->stone,
-            'product_him_size' => $request->him_size,
-            'product_her_size' => $request->her_size,
-            'product_price' => $request->price,
-            'product_gold' => $request->gold,
-            'product_color' => $request->color,
+            'product_description'   => $request->description
         ]);
         
         return redirect()->route("products.index");
@@ -89,16 +80,7 @@ class ProductController extends Controller
         $product->update([
             'product_name' => $request->name,
             'product_image' => $image,
-            'product_him_model' => $request->him_model,
-            'product_her_model' => $request->her_model,
-            'product_him_weight' => $request->him_weight,
-            'product_her_weight' => $request->her_weight,
-            'product_stone' => $request->stone,
-            'product_him_size' => $request->him_size,
-            'product_her_size' => $request->her_size,
-            'product_price' => $request->price,
-            'product_gold' => $request->gold,
-            'product_color' => $request->color,
+            'product_description'   => $request->description
         ]);
 
         return redirect()->route("products.index");

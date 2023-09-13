@@ -26,7 +26,15 @@
               @endif
             </div>
 
-            <div class="mb-3">
+
+            <div class="form-floating">
+              <textarea class="form-control" name="description" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Keterangan</label>
+            </div>
+
+            
+
+            {{-- <div class="mb-3">
               <label for="" class="form-label">Model Him</label>
               <select name="him_model" id="" class="form-control" value="{{old("him_model",$product->product_him_model)}}">
                 <option value="Silver" {{old('him_model',$product->product_him_model) == "Silver" ? "selected" :""}}>Silver</option>
@@ -140,7 +148,7 @@
               @else
                   Pilih Salah Satu Gold Color
               @endif
-            </div>
+            </div> --}}
 
 
             <button type="submit" class="btn btn-primary">Submit</button>

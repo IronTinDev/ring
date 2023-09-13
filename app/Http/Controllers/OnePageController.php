@@ -12,33 +12,42 @@ class OnePageController extends Controller
 
     public function index()
     {
-        $wa = env("WA_NUMBER");
-        $message =  env("WA_MESSAGE") ;
-        return view('welcome',compact("wa","message"));
+        return view('visitors.welcome');
     }
 
-    public function getProducts()
+    public function collection()
     {
         $products = Product::get();
 
-        return $products;
+        return view("visitors.collection",compact("products"));
+    }
+
+    public function order()
+    {
+        $products = Product::get();
+
+        return view("visitors.order",compact("products"));
     }
 
     public function email(Request $request)
     {
         $vaildated = $request->validate([
-            'name'  => 'required|string',
+            'customer'  => 'required|string',
+            'name'  => 'required|exists:products,id',
             'email' => 'required|email|string',
             'phone' => 'required|integer',
-            'message'=> 'nullable|string'
+            'stone'         => 'required|in:Diamon,Sirkon,Stone',
+            'gold'          => 'required|in:24,21,18,17,16,9,8,6',
+            'color'         => 'required|in:White,Yellow,Red,Rose',
+
         ]);
 
         if($vaildated){
             Mail::to(env('MAIL_FROM_ADDRESS'))->send(
-                new SendEmail($request)
+                new SendEmail($request,Product::find($request->name))
             );
     
-            return redirect()->back();
+            return back()->with("message", "Berhasil Mengirim Pesanan");
         }
 
         abort(402,"input kembali");

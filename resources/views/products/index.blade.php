@@ -31,6 +31,9 @@
                   <h6 class="fw-semibold mb-0">Image</h6>
                 </th>
                 <th class="border-bottom-0">
+                  <h6 class="fw-semibold mb-0">Keterangan</h6>
+                </th>
+                {{-- <th class="border-bottom-0">
                   <h6 class="fw-semibold mb-0">Him Model</h6>
                 </th>
                 <th class="border-bottom-0">
@@ -59,7 +62,7 @@
                 </th>
                 <th class="border-bottom-0">
                   <h6 class="fw-semibold mb-0">Color</h6>
-                </th>
+                </th> --}}
                 <th class="border-bottom-0">
                   <h6 class="fw-semibold mb-0">Aksi</h6>
                 </th>
@@ -73,9 +76,12 @@
                   <p class="mb-0 fw-normal">{{$product->product_name}}</p>
                   </td>
                   <td class="border-bottom-0">
-                  <img src="{{ asset('storage/images/'.$product->product_image) }}" alt="" style="width: 100px; heigth: 100px;" >
+                    <img src="{{ asset('storage/images/'.$product->product_image) }}" alt="" style="width: 100px; heigth: 100px;" >
                   </td>
                   <td class="border-bottom-0">
+                  <p class="mb-0 fw-normal">{{$product->product_description}}</p>
+                  </td>
+                  {{-- <td class="border-bottom-0">
                   <p class="mb-0 fw-normal">{{$product->product_him_model}}</p>
                   </td>
                   <td class="border-bottom-0">
@@ -104,7 +110,7 @@
                   </td>
                   <td class="border-bottom-0">
                   <p class="mb-0 fw-normal">{{$product->product_color}}</p>
-                  </td>
+                  </td> --}}
                   <td class="border-bottom-0">
                     <div class="d-flex align-items-center gap-2">
                         <button class="btn btn-sm btn-warning">

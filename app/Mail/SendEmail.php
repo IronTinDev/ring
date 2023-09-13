@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Product;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -14,12 +15,14 @@ class SendEmail extends Mailable
     use Queueable, SerializesModels;
 
     public $data;
+    public $product;
     /**
      * Create a new message instance.
      */
-    public function __construct($data)
+    public function __construct($data,$product)
     {
         $this->data = $data;
+        $this->product = $product;
     }
 
     /**
