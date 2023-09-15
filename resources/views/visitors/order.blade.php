@@ -3,10 +3,11 @@
 {{-- jumbotron --}}
 <section class="jumbotron text-center">
   <h1 class="display-4">Pre Order</h1>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5dc8d6" fill-opacity="1" d="M0,64L240,128L480,96L720,128L960,128L1200,224L1440,128L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z"></path></svg>
 </section>
 {{-- jumbotron --}}
-<section id="product" class="pt-2 pb-2">
-  <div class="container">
+<section id="product" class="pb-2">
+  <div class="container pb-5">
 
     <div class="row justify-content-center">
       <div class="col-8" style="background-color:#5dc8d6">

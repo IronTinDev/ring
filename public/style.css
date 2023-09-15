@@ -1,5 +1,9 @@
-section {
-    padding-bottom: 6rem;
+.container-fluid {
+    padding-top: 8rem !important;
+    padding-bottom: 2rem;
+}
+footer {
+    background-color: #5dc8d6;
 }
 .btn-primary {
     background-color: #34adbd;

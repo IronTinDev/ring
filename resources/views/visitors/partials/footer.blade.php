@@ -1,4 +1,4 @@
-<footer class="text-center" style="background-color: #34adbd">Created with By <a href="" class="text-light">TinDev</a></footer>
+<footer class="text-center" style="">Created with By <a href="" class="text-light">TinDev</a></footer>
 
 <!-- end footer -->
 
