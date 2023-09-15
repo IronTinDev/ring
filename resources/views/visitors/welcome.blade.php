@@ -1,30 +1,31 @@
 @extends('layouts.template')
 @section('content')
     {{-- carousel --}}
-    <section id="jumbotron" class=" ">
+    
+    <section id="carousel">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner ">
-          <div class="carousel-item active" style="height: 700px">
-            <img src="{{asset('img/c1.jpg')}}" class="d-block w-100" alt="project1">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/c1.jpg" class="d-block w-100" alt="img/c1.jpg">
             <div class="carousel-caption d-none d-md-block">
-              <h5 >Kilauan Kecantikan yang Abadi.</h5>
+              <h5>Kilauan Kecantikan yang Abadi.</h5>
               <p >Setiap perhiasan kami menghadirkan keindahan yang abadi dan berharga, menjadi warisan untuk masa depan Anda</p>
             </div>
           </div>
-          <div class="carousel-item" style="height: 700px" >
-            <img src="{{asset('img/c2.jpg')}}" class="d-block w-100" alt="project2">
+          <div class="carousel-item">
+            <img src="img/c2.jpg" class="d-block w-100" alt="img/c1.jpg">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="text-dark">Mengukir Memori dengan Gemerlap Mutiara.</h5>
               <p class="text-dark">Mutiara kami menciptakan kenangan indah yang tak terlupakan, menjadikannya warisan generasi.</p>
             </div>
           </div>
-          <div class="carousel-item" style="height: 700px">
-            <img src="{{asset('img/c3.jpg')}}" class="d-block w-100" alt="project3">
+          <div class="carousel-item">
+            <img src="img/c3.jpg" class="d-block w-100" alt="img/c1.jpg">
             <div class="carousel-caption d-none d-md-block">
               <h5 >Membawa Elegansi ke Setiap Detik Anda.</h5>
               <p >Perhiasan kami melengkapi setiap momen dengan gaya dan keanggunan yang tak tertandingi.</p>
